@@ -11,7 +11,7 @@
 
 }) ();*/
 
-/// selecionar nodos específicos
+/// seleccionar nodos específicos
 
 (function() {
     'use strict';
