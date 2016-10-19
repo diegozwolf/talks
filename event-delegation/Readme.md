@@ -5,7 +5,9 @@
 Evita agregar eventos a elementos específicos; en vez de eso, el evento se agrega a un elemento padre. Ese event listener analiza los elementos elevados (bubbling) para hacer "match" con elementos hijos.
 
 ##========= Uso ==========
-Event delegation evita que tengamos que poner event listeners a cada elemento
+.-asigna eventos a elementos dinámicos
+
+-Event delegation evita que tengamos que poner event listeners a cada elemento
 
 
 ##========= °o°o° Event Bubbling °o°o° =======

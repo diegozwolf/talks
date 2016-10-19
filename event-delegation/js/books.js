@@ -1,7 +1,7 @@
 /// Modo Event delegation: Se agrega un Event listener al padre
-(function() {
+/*(function() {
     'use strict';
-    var books = document.querySelector('#books');
+    var books = document.querySelector('.books');
     books.addEventListener('click', function(e){
         console.log(e);
         if (e.target){
@@ -9,13 +9,13 @@
         }
     }, false);
 
-}) ();
+}) ();*/
 
 /// selecionar nodos específicos
 
-/*(function() {
+(function() {
     'use strict';
-    var books = document.querySelector('#books');
+    var books = document.querySelector('.books');
     books.addEventListener('click', function(e){
         console.log(e);
         if (e.target){
@@ -29,7 +29,7 @@
         }
     }, false);
 
-}) ();*/
+}) ();
 
 
 
@@ -65,5 +65,4 @@
     }, false);
 
 }) ();
-    
-*/
+    */
