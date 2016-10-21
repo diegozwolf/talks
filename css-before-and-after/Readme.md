@@ -20,7 +20,11 @@ Elemento::after {
 
 Strings:  `content: "elementos a agregar como hola";`
 
-Imágenes: `content: url(http://baby-animals.net/wp-content/gallery/Baby-crocodile-wallpapers/Baby-crocodile-wallpaper-2.jpg);`
+Imágenes: `content: url(/path/to/image.jpg);`
+
+Nada: (espacios en blanco)   `content: "";`  util para el truco de  [clearfix](http://es.learnlayout.com/clearfix.html)
+
+(ajustar ´contenidos enn un espacio determinado )
 
 
 
