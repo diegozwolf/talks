@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::after {
+    content: " - I am going after p";
+    background-color:blue;
+    color: red;
+    font-weight: bold;
+}
+.texto::before {
+	    content: "- I am going before p";
+	    background-color:red;
+	    color: blue;
+	    font-weight: bold;
+}
+.texto2::after {
+	    content: url(http://www.schleich-s.com/fileadmin/media/images/item_detail/14683.jpg);
+	    background-color:red;
+	    color: blue;
+	    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<p>My name is Donald</p>
+<p class="texto">I live in Ducksburg</p>
+
+<p><b>Note:</b> For this selector to work in IE8, a DOCTYPE must be declared, and you must use the old, single-colon CSS2 syntax (:after instead of ::after).</p>
+<p class="texto"><b>Note:</b> For this selector to work in IE8, a DOCTYPE must be declared, and you must use the old, single-colon CSS2 syntax (:after instead of ::after).</p>
+<p class="texto2"><b>Note:</b> For this selector to work in IE8, a DOCTYPE must be declared, and you must use the old, single-colon CSS2 syntax (:after instead of ::after).</p>
+
+</body>
+</html>
