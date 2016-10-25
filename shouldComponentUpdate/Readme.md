@@ -5,18 +5,18 @@
 
 Los componentes poseen diferentes estados y métodos: 
 
--`componentWillMount` se ejecuta antes de la representación, tanto en el lado del servidor y el cliente.
+- `componentWillMount` se ejecuta antes de la representación, tanto en el lado del servidor y el cliente.
 
--`componentDidMount` se ejecuta después del la primer render sólo en el lado del cliente. 
+- `componentDidMount` se ejecuta después del la primer render sólo en el lado del cliente. 
 
 - `componentWillReceiveProps` se invoca tan pronto como los apoyos se actualizan antes de que otro se llama render.
 
 
--`componentWillUpdate` se llama justo antes de la representación.
+- `componentWillUpdate` se llama justo antes de la representación.
 
--`componentDidUpdate` se llama justo después de la representación.
+- `componentDidUpdate` se llama justo después de la representación.
 
--`componentWillUnmount` se llama después de que el componente se desmonta del DOM. Estamos de desmontar nuestro componente en main.js.
+- `componentWillUnmount` se llama después de que el componente se desmonta del DOM. Estamos de desmontar nuestro componente en main.js.
 
 
 ##==================== shouldComponentUpdate ====================
