@@ -28,7 +28,7 @@ Es un método que nos permite sobreescribir en este estado se permite indicar si
 ##==================== Ubicación ====================
  Lógicamente se ejecuta antes que el método render y obviamente no se ejecuta cuando se inicializa un componente. Siempre debemos devolver un booleano indicando si el componente tiene que actualizarse o no.
 
-##==================== Boleano cómo requisito ====================
+##============ Boleano cómo requisito ============ 
 
 `shouldComponentUpdate` debe devolver el valor verdadero o falso. Esto determinará si el componente se actualizará o no. Se establece en true de forma predeterminada. Si está seguro de que el componente no es necesario que muestre la representación tras estatal o apoyos se actualizan, se puede devolver el valor falso.
 
@@ -37,46 +37,46 @@ Es un método que nos permite sobreescribir en este estado se permite indicar si
 
 En este ejemplo solo nos renderiza el componente cuando this.props.val dividido entre dos, el cociente sea 0, para este ejemplo hacemos uso del evento onClick de React js.
 
-`import React from 'react';
-import ReactDOM from 'react-dom';
+`import React from 'react';`
+`import ReactDOM from 'react-dom';`
 
-class MyComponent extends React.Component {
-  constructor(props){
-    super(props);
-    this.update = this.update.bind(this);
-  }
+`class MyComponent extends React.Component {`
+  `constructor(props){`
+    `super(props);`
+    `this.update = this.update.bind(this);`
+  `}`
   
-  shouldComponentUpdate(nextProps,nextState){
-    console.log(nextProps);
-    return nextProps.val % 2 == 0;
-  }
+  `shouldComponentUpdate(nextProps,nextState){`
+    `console.log(nextProps);`
+    `return nextProps.val % 2 == 0;`
+  `}`
   
-  componentWillUpdate(){
-    console.log('Update MyComponent...');
-  }
+  `componentWillUpdate(){`
+    `console.log('Update MyComponent...');`
+  `}`
 
-  update(){
-    ReactDOM.render(
-      <MyComponent val={this.props.val + 1}/>, 
-      document.getElementById('container')
-    ); 
-  }
-  render(){
-    return <div>
-      <span>My Component contador:</span>
-      <button onClick={this.update}>{this.props.val}</button>
-    </div>
-  }
-}
+  `update(){`
+    `ReactDOM.render(`
+      `<MyComponent val={this.props.val + 1}/>,` 
+      `document.getElementById('container')`
+    `);` 
+  `}`
+  `render(){`
+    `return <div>`
+      `<span>My Component contador:</span>`
+      `<button onClick={this.update}>{this.props.val}</button>`
+    `</div>`
+  `}`
+`}`
 
-MyComponent.defaultProps = {
-  val:0
-};
+`MyComponent.defaultProps = {`
+  `val:0`
+`};`
 
-ReactDOM.render(
-  <MyComponent />, 
-  document.getElementById('container')
-);` 
+`ReactDOM.render(`
+  `<MyComponent />,` 
+  `document.getElementById('container')`
+`);` 
 
 
 
