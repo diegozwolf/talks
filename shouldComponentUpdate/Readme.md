@@ -19,7 +19,7 @@ Los componentes poseen diferentes estados y métodos:
 - `componentWillUnmount` se llama después de que el componente se desmonta del DOM. Estamos de desmontar nuestro componente en main.js.
 
 
-##==================== shouldComponentUpdate ====================
+##============ shouldComponentUpdate ============
 Es un método que nos permite sobreescribir en este estado se permite indicar si es necesario que el componente se tiene que volver a renderizar o no.
 
 ##==================== Uso ====================
@@ -37,46 +37,7 @@ Es un método que nos permite sobreescribir en este estado se permite indicar si
 
 En este ejemplo solo nos renderiza el componente cuando this.props.val dividido entre dos, el cociente sea 0, para este ejemplo hacemos uso del evento onClick de React js.
 
-`import React from 'react';`
-`import ReactDOM from 'react-dom';`
-
-`class MyComponent extends React.Component {`
-  `constructor(props){`
-    `super(props);`
-    `this.update = this.update.bind(this);`
-  `}`
-  
-  `shouldComponentUpdate(nextProps,nextState){`
-    `console.log(nextProps);`
-    `return nextProps.val % 2 == 0;`
-  `}`
-  
-  `componentWillUpdate(){`
-    `console.log('Update MyComponent...');`
-  `}`
-
-  `update(){`
-    `ReactDOM.render(`
-      `<MyComponent val={this.props.val + 1}/>,` 
-      `document.getElementById('container')`
-    `);` 
-  `}`
-  `render(){`
-    `return <div>`
-      `<span>My Component contador:</span>`
-      `<button onClick={this.update}>{this.props.val}</button>`
-    `</div>`
-  `}`
-`}`
-
-`MyComponent.defaultProps = {`
-  `val:0`
-`};`
-
-`ReactDOM.render(`
-  `<MyComponent />,` 
-  `document.getElementById('container')`
-`);` 
+[ver ejemplo](https://github.com/diegozwolf/talks/blob/master/shouldComponentUpdate/example.js)
 
 
 
