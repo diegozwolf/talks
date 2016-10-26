@@ -37,7 +37,7 @@ Es un método que nos permite sobreescribir en este estado se permite indicar si
 
 En este ejemplo solo nos renderiza el componente cuando this.props.val dividido entre dos, el cociente sea 0, para este ejemplo hacemos uso del evento onClick de React js.
 
-import React from 'react';
+`import React from 'react';
 import ReactDOM from 'react-dom';
 
 class MyComponent extends React.Component {
