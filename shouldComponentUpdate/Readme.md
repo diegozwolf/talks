@@ -25,6 +25,10 @@ Es un método que nos permite sobreescribir en este estado se permite indicar si
 ##==================== Uso ====================
  Nos puede permitir  evitar y filtrar ciertos renderizados.
 
+##==================== Sintaxis ====================
+ shouldComponentUpdate(nextProps, nextState)
+
+
 ##==================== Ubicación ====================
  Lógicamente se ejecuta antes que el método render y obviamente no se ejecuta cuando se inicializa un componente. Siempre debemos devolver un booleano indicando si el componente tiene que actualizarse o no.
 
