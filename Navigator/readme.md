@@ -21,22 +21,31 @@ la documentación de `React-Native` se proponen 3 maneras de realizar un compone
 Navigator proporciona una implementación de JavaScript de una componente de navegación, por lo que funciona en ambos iOS y Android y es fácil de personalizar.
 
 
+Navigator se puede adaptar para renderizar  diferentes componentes basados enla función `renderScene`. La transición delas  nuevas escenas en la pantalla  se haran deslizando desde la derecha de forma predeterminada, esto se puede controlar usando la función configureScene. 
+
+##============ NavigatorIOS ============
+También usa rutas para representar escenas, el componente actual que se va a renderizar, puede ser especificado utilizando `key` del componente en la ruta, y los props deben ser especificados en `passProps`. El óbjeto `navigator` es pasado automaticamente comi prop del componente permitiendo llamar push y pop
+
+
+
+##======= NavigationExperimental =======
+permite que cualquier `View` pueda actuar como vista de navegación y usa `reducers` para manipular el etado
+
+[Ejemplos de navegación](https://github.com/diegozwolf/talks/blob/master/Navigator/example.jscom/clearfix.html)
+
+
+##======= Fuentes =======
+
+[Documentación: Navigation  react-native](https://facebook.github.io/react-native/docs/navigation.html)
+
+[Documentación: Navigator  react-native](https://facebook.github.io/react-native/docs/navigator.html)
+
+[Tutorial de Navigator](https://facebook.github.io/react-native/docs/using-navigators.html)
 
 
 
 
-Esta guía cubre los diversos componentes de navegación disponibles en React nativo. Si acaba de empezar con la navegación, es probable que desee utilizar Navigator. Si sólo se dirigen a iOS y quisiera pegarse al aspecto nativo, echa un vistazo a NavigatorIOS. Si busca un mayor control sobre su pila de navegación, no se puede ir mal con NavigationExperimental.
 
-
-
-
-
-
-
-
-
-
-https://sitelabs.es/react-native-nativizando-el-desarrollo-hibrido-de-apps/
 
 ##============ shouldComponentUpdate ============
 Es un método que nos permite sobreescribir en este estado se permite indicar si es necesario que el componente se tiene que volver a renderizar o no.
