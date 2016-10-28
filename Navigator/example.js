@@ -114,7 +114,7 @@ class MyScene extends Component {
   renderScene={renderSceneFun}
 />
 
-/// Definir estado inicialy el componente top level 
+/// Definir estado inicial y el componente top level 
 
 class BleedingEdgeApplication extends Component {
   constructor(props, context) {

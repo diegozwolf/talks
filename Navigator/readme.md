@@ -31,7 +31,7 @@ También usa rutas para representar escenas, el componente actual que se va a re
 ##======= NavigationExperimental =======
 permite que cualquier `View` pueda actuar como vista de navegación y usa `reducers` para manipular el etado
 
-[Ejemplos de navegación](https://github.com/diegozwolf/talks/blob/master/Navigator/example.jscom/clearfix.html)
+[Ejemplos de navegación](https://github.com/diegozwolf/talks/blob/master/shouldComponentUpdate/example.js)
 
 
 ##======= Fuentes =======
