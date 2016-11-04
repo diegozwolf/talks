@@ -18,10 +18,10 @@ la documentación de `React-Native` se proponen 3 maneras de realizar un compone
 `NavigationExperimental`: búsqueda de mayor control sobre el flujo de la navegación y es optimo para hacer pruebas
 
 ##============ Navigator ============
-Navigator proporciona una implementación de JavaScript de una componente de navegación, por lo que funciona en ambos iOS y Android y es fácil de personalizar.
+Navigator proporciona hace una implementación de JavaScript de un componente de navegación, por lo que funciona en ambos iOS y Android y es fácil de personalizar.
 
 
-Navigator se puede adaptar para renderizar  diferentes componentes basados enla función `renderScene`. La transición delas  nuevas escenas en la pantalla  se haran deslizando desde la derecha de forma predeterminada, esto se puede controlar usando la función configureScene. 
+Navigator se puede adaptar para renderizar  diferentes componentes basados en la función `renderScene`. La transición delas  nuevas escenas en la pantalla  se haran deslizando desde la derecha de forma predeterminada, esto se puede controlar usando la función configureScene. 
 
 ##============ NavigatorIOS ============
 También usa rutas para representar escenas, el componente actual que se va a renderizar, puede ser especificado utilizando `key` del componente en la ruta, y los props deben ser especificados en `passProps`. El óbjeto `navigator` es pasado automaticamente comi prop del componente permitiendo llamar push y pop

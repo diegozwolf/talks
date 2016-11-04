@@ -1,3 +1,7 @@
+/*En este ejemplo solo se va  renderizar el componente cuando
+el cociente de this.props.val dividido entre dos,  sea 0,
+para este ejemplo se hace  uso del evento onClick de React js.*/
+
 
 import React from 'react';
 import ReactDOM from 'react-dom';
